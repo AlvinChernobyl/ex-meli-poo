@@ -1,4 +1,4 @@
-package com.mercadolivre.exercicio_meli_poo.exercicio;
+package com.mercadolivre.exercicio_meli_poo.biblioteca;
 
 import com.mercadolivre.exercicio_meli_poo.ItemBiblioteca;
 

@@ -1,6 +1,7 @@
-package com.mercadolivre.exercicio_meli_poo.exercicio;
+package com.mercadolivre.exercicio_meli_poo.service;
 
-import com.mercadolivre.exercicio_meli_poo.ItemBiblioteca;
+import com.mercadolivre.exercicio_meli_poo.biblioteca.Livro;
+import com.mercadolivre.exercicio_meli_poo.biblioteca.Item;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ public class Biblioteca {
     public void listarItens() {
         for (Item item : itens) {
             item.exibirDetalhes();
+            System.out.println("\n----------------");
         }
     }
 
@@ -27,5 +29,4 @@ public class Biblioteca {
         }
         return null;
     }
-
 }

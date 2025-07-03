@@ -1,15 +1,6 @@
 package com.mercadolivre.exercicio_meli_poo.exercicio;
 
-public class Revista extends Item {
-    private int edicao;
-
-    public int getEdicao() {
-        return edicao;
-    }
-    public void setEdicao(int edicao) {
-        this.edicao = edicao;
-    }
-
+public class Livro extends Item {
     @Override
     public void exibirDetalhes() {
         System.out.println("Tipo: " + getTipo());
@@ -20,6 +11,6 @@ public class Revista extends Item {
 
     @Override
     public String getTipo() {
-        return "Resvista";
+        return "Livro";
     }
 }

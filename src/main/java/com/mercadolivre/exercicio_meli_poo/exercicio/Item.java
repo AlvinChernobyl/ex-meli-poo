@@ -1,6 +1,8 @@
 package com.mercadolivre.exercicio_meli_poo.exercicio;
 
-public class ItemBiblioteca {
+import com.mercadolivre.exercicio_meli_poo.ItemBiblioteca;
+
+public abstract class Item implements ItemBiblioteca {
     private String titulo;
     private String autor;
     private int anoPublicacao;
@@ -13,7 +15,7 @@ public class ItemBiblioteca {
         this.titulo = titulo;
     }
 
-    public String getAutor(String autor) {
+    public String getAutor() {
         return autor;
     }
 
@@ -21,7 +23,7 @@ public class ItemBiblioteca {
         this.autor = autor;
     }
 
-    public int getAnoPublicacao(int anoPublicacao) {
+    public int getAnoPublicacao() {
         return anoPublicacao;
     }
 
@@ -33,9 +35,5 @@ public class ItemBiblioteca {
         }
     }
 
-    public void exibirDetalhes() {
-        System.out.println("Titulo: " + titulo);
-        System.out.println("Autor: " + autor);
-        System.out.println("Ano Publicacao: " + anoPublicacao);
-    }
+    public abstract String getTipo();
 }

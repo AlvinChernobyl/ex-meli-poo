@@ -12,9 +12,18 @@ public class Biblioteca {
     }
 
     public void listarLivro() {
-        for  (Livro livro : livros) {
+        for (Livro livro : livros) {
             livro.exibirDetalhes();
         }
+    }
+
+    public Livro buscarLivroPorTitulo(String titulo) {
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+                return livro;
+            }
+        }
+        return null;
     }
 
 }

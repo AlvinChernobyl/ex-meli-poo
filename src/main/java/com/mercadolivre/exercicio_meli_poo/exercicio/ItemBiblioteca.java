@@ -1,6 +1,6 @@
 package com.mercadolivre.exercicio_meli_poo.exercicio;
 
-public class Livro {
+public class ItemBiblioteca {
     private String titulo;
     private String autor;
     private int anoPublicacao;

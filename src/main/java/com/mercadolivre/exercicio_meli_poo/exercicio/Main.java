@@ -1,30 +1,28 @@
 package com.mercadolivre.exercicio_meli_poo.exercicio;
 
-import java.awt.print.Book;
-
 public class Main {
 
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca();
 
-        Livro livro1 = new Livro();
-        livro1.setTitulo("Titulo 1");
-        livro1.setAutor("Autor");
-        livro1.setAnoPublicacao(2021);
+        ItemBiblioteca itemBiblioteca1 = new ItemBiblioteca();
+        itemBiblioteca1.setTitulo("Titulo 1");
+        itemBiblioteca1.setAutor("Autor");
+        itemBiblioteca1.setAnoPublicacao(2021);
 
-        Livro livro2 = new Livro();
-        livro2.setTitulo("Teste2");
-        livro2.setAutor("teste2");
-        livro2.setAnoPublicacao(1);
+        ItemBiblioteca itemBiblioteca2 = new ItemBiblioteca();
+        itemBiblioteca2.setTitulo("Teste2");
+        itemBiblioteca2.setAutor("teste2");
+        itemBiblioteca2.setAnoPublicacao(1);
 
-        Livro livro3 = new Livro();
-        livro3.setTitulo("teste");
-        livro3.setAutor("teste");
-        livro3.setAnoPublicacao(3994);
+        ItemBiblioteca itemBiblioteca3 = new ItemBiblioteca();
+        itemBiblioteca3.setTitulo("teste");
+        itemBiblioteca3.setAutor("teste");
+        itemBiblioteca3.setAnoPublicacao(3994);
 
-        biblioteca.adicionarLivro(livro1);
-        biblioteca.adicionarLivro(livro2);
-        biblioteca.adicionarLivro(livro3);
+        biblioteca.adicionarLivro(itemBiblioteca1);
+        biblioteca.adicionarLivro(itemBiblioteca2);
+        biblioteca.adicionarLivro(itemBiblioteca3);
 
         biblioteca.listarLivro();
 
